@@ -1,20 +1,18 @@
-(function Engine() {
-    function InputManager() {
-        console.log("InputManager loaded");
-        
-        return;
-    }
-    
-    function SoundManager() {
-        console.log("SoundManager loaded");
-        
-        return;
-    }
-    
-    var inputManager = new InputManager(),
-        soundManager = new SoundManager();
-    
-    //
-    
-    return;
-})();
+function Engine() {
+	//Gentlemen, start your engines!
+	this.start();
+	
+	return;
+}
+
+Engine.prototype.start = function() {
+	setInterval(this.loop, 0);
+	
+	return;
+}
+
+Engine.prototype.loop = function() {
+	
+	
+	return;
+}
