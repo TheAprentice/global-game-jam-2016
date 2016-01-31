@@ -6,13 +6,13 @@ function Engine() {
 
 Engine.prototype.start = function() {
 	var thisEngine = this;
-	
+
 	this.intervalID = setInterval(function() {
 		return thisEngine.loop();
 	}, 0);
-	
+
 console.log(this);
-	
+
 	return;
 }
 
@@ -20,6 +20,6 @@ console.log(this);
 Engine.prototype.loop = function() {
 	console.log("Please define Engine.prototype.loop()");
 	clearInterval(this.intervalID);
-	
+
 	return;
 }
