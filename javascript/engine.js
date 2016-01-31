@@ -1,20 +1,25 @@
-(function Engine() {
-    function InputManager() {
-        console.log("InputManager loaded");
-        
-        return;
-    }
-    
-    function SoundManager() {
-        console.log("SoundManager loaded");
-        
-        return;
-    }
-    
-    var inputManager = new InputManager(),
-        soundManager = new SoundManager();
-    
-    //
-    
-    return;
-})();
+function Engine() {
+	this.intervalID;
+	
+	return;
+}
+
+Engine.prototype.start = function() {
+	var thisEngine = this;
+
+	this.intervalID = setInterval(function() {
+		return thisEngine.loop();
+	}, 0);
+
+console.log(this);
+
+	return;
+}
+
+//TODO: DEFINE THIS IN GAME LOGIC
+Engine.prototype.loop = function() {
+	console.log("Please define Engine.prototype.loop()");
+	clearInterval(this.intervalID);
+
+	return;
+}
