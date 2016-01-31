@@ -40,7 +40,8 @@ Engine.prototype.SoundManager = (function() {
 					"assets/pan_dong.wav",
 					"assets/pan_hit.wav",
 					"assets.tinkling.wav",
-					"assets/trainsound.wav"
+					"assets/trainsound.wav",
+					"assets/chomp.wav"
 				];
 
 		return bufferLoader;
